@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: #2C314F;
+    color: white;
+}
+
+nav{
+    height: 100px;
+    padding-inline: 50px;
+}
+
+nav, 
+.btn,
+.logo
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+nav ul li{
+    cursor: pointer;
+    position: relative;
+}
+
+a{
+    color: white;
+}
+
+.active::after {
+   content: "";
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 50%;
+    border-bottom: 3px solid #FFB77E; 
+    border-radius: 5px;
+}
+
+.active:hover::after{
+    width: 100%;
+}
+
+.logo{
+    align-items: flex-end;
+    gap: 10px;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+
+nav img{
+    width: 50px;
+}
+
+
+
+.login{
+    padding: 10px 20px;
+    background: transparent;
+    color: #FFB77C;
+    box-shadow: none;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    font-size: 1.5rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.login:hover{
+    border: 2px solid #FFB77C;
+}
+
+.signup{
+    padding: 10px 20px;
+    background: #FFB77C;
+    box-shadow: none;
+    border-radius: 10px;
+    border: 2px solid #FFB77C;
+    font-size: 1.5rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.signup:hover{
+    background: transparent;
+
+    color: #FFB77C;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 50px;
+}
+
+.left-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-inline: 50px;
+     height: 80dvh;
+    padding-left: 40px;
+}
+.esquerda,
+.direita{
+    display: flex;
+    flex: 1;
+    height: 80dvh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.esquerda{
+   
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.esquerda h1{
+    font-size: 5rem;
+    max-width: 400px;
+    margin-bottom: 30px;
+    color: #F8B17B;
+}
+
+.esquerda h1 span{
+    background-color: #FFFFFF;
+    color: #2C314F;
+}
+
+.esquerda h3{
+    width: 30vw;
+}
+
+.direita img{
+    width: 40vw;
+}
+
+.btn{
+    width: 30vw;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn button{
+    display: flex;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.btn p{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
